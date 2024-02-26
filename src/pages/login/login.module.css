@@ -1,0 +1,11 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper{
+    background-image: url(../../assets/login_pageBG.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+}

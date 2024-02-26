@@ -1,0 +1,60 @@
+.header{
+    height: 100px;
+    background-color: #7C3A0A;
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    place-items: center flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    color: #ffffff;
+    font-family: "Ubuntu Mono";
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: normal;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+}
+.main_title{
+    font-size: 44px;
+}
+.logo_div{
+    padding:42px;
+    gap: 40px;
+    display: flex;
+    place-items: center flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+
+    color: #ffffff;
+    font-family: "Ubuntu Mono";
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: normal;
+
+}
+.logo_div *{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    text-align: start;
+}
+.logo_div p{
+    font-size: 36px;
+}
+.main_title{
+    color: #ffffff;
+    font-family: "Ubuntu Mono";
+    font-size: 48px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: normal;
+}
