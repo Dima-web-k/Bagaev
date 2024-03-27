@@ -1,15 +1,15 @@
-body{
+#error_page{
     text-align: center;
     background-color: #ffffff;
 
 }
-h1{
+#error_page h1{
     font-size: 5rem;
     font-weight: bold;
 }
-p{
+#error_page p{
     font-size: 3rem;
 }
-p span{
+#error_page p span{
     font-weight: bold;
 }

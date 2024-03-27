@@ -1,12 +1,13 @@
 // import '../../index.css'
 import style from './login.module.css'
+import {LoginBG} from './login_pageBG'
 
 export default function LoginPage() {
-    let title= document.getElementById('head_title')
+    let title= document.getElementById('head_title')!
     title.textContent='Login'
     return (
-        <div className={style.wrapper}>
-            <h1>Регистрация</h1>
+        <>
+            <h1>Вход</h1>
             <form className={style.form} method="get" action="../result">
                 <label>
                     <span>Логин:</span>
@@ -19,6 +20,7 @@ export default function LoginPage() {
                 </label>
                 <input type="submit" value="Отправить"/>
             </form>
-        </div>
+            <LoginBG/>
+        </>
     )
 }

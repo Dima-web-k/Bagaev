@@ -4,6 +4,7 @@
     justify-content: center;
     transition: padding-bottom 0.5s;
     text-align: left;
+    padding-bottom: 50px;
 }
 .tabs img{
     border-radius: 50%;
@@ -73,5 +74,5 @@
     transition-delay: 0s;
 }
 .tabs:has(.tab :hover) {
-    padding-bottom: 240px;
+    padding-bottom: 340px;
 }

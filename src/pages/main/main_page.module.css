@@ -40,13 +40,8 @@ footer{
     display: grid;
     grid-template-columns: 444px auto auto;
     row-gap: 100px;
-    /* justify-content: space-between;
-    place-items: center flex-start;
-    flex-direction: row;
-    flex-wrap: wrap; */
-    
 
-    margin: 32px 48px 32px 32px;
+    margin: 32px;
 
     color: #ffffff;
     font-family: "Ubuntu Mono";
@@ -190,8 +185,13 @@ footer{
     border: none;
     padding: 0;
     height: 48px;
-    font-size: 20px;
+    font-size: 26px;
     color: #ffffff;
+    font-family: "Ubuntu Mono";
+    font-weight: normal;
+    font-style: normal;
+    line-height: normal;
+    user-select: none;
     cursor: pointer;
     transition: transform 0.35s;
 }
@@ -213,7 +213,19 @@ footer{
     width: 100%;
     padding-top: 48px;
     margin-bottom: 96px;
+    
 }
+.mainpage_content1 > section{
+    display: flex;
+    place-items: stretch center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    /* border: red 1px solid; */
+    width: calc(100% - 432px);
+    margin: 0 216px 0;
+}
+
 .mainpage_content1 h2{
     color: #000000;
     font-family: "Ubuntu Mono";
@@ -226,31 +238,40 @@ footer{
     background-color: #ffffff;
     display: flex;
     place-items: center center;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
     flex-wrap: nowrap;
     border-radius: 22px;
-    cursor: pointer;
-    margin: 0 112px 0;
+    /* cursor: pointer; */
+    width: 15.8vw;
+    /* margin: 0 112px 0; */
 
     color: #000000;
+    text-align: center;
     font-family: "Ubuntu Mono";
-    font-size: 32px;
+    font-size: 27px;
     font-weight: normal;
     font-style: normal;
     line-height: normal;
-    word-break: break-all;
     transition: background-color 0.25s;
 }
-.mainpage_subject:hover{
-    background-color: #F5C3A0;
-}
 .mainpage_subject img{
-    margin: 33px;
+    margin: 56px;
+    width: 116px;
 }
 .mainpage_subject p{
-    padding-right: 32px;
+    padding-bottom: 50px;
 }
-
+.mainpage_content1_content{
+    width: 100%;
+    padding: 0 0 48px;
+    display: flex;
+    justify-content: space-evenly;
+    place-items: start center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
 
 .mainpage_content2{
     background-color: #c97f4a;
@@ -290,7 +311,6 @@ footer{
     height: 22vw;
     margin: 88px 112px 64px;
 
-
     font-size: 2.4vw;
 }
 .mainpage_principle hr{
@@ -301,7 +321,6 @@ footer{
 }
 .mainpage_principle div{
     height: 22vw;
-
     display: flex;
     place-items: center center;
     justify-content: space-evenly;
@@ -323,44 +342,16 @@ footer{
     width: 100%;
 }
 
-.mainpage_content3{
-    display: flex;
-    place-items: center center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 100%;
-    background-color: #c97f4a;
-}
-.mainpage_content3 h2{
-    color: #ffffff;
-    font-family: "Ubuntu Mono";
-    font-size: 53px;
-    font-weight: normal;
-    font-style: normal;
-    line-height: normal;
-}
-.mainpage_content3_content{
-    width: 100%;
-    height: 507px;
-    padding: 48px 0 48px;
-    display: flex;
-    justify-content: space-evenly;
-    place-items: start center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: stretch;
-}
-.mainpage_cup{
-    width: 35vw;
-    height: 35vw;
-}
+
 .mainpage_reviews{
     display: flex;
     place-items: start center;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    gap: 16px;
     padding: 0 64px;
+    width: 100%;
 
     color: #ffffff;
     font-family: "Ubuntu Mono";
@@ -374,12 +365,14 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-around;
     max-width: 640px;
-    padding: 16px;
+    padding: 32px;
+    width: 304px;
+    height: 210px;
 
-    background-color: #FFF0D9;
-    border-radius: 18px;
-    border: 1px solid black;
+    background-color: #F5C3A0;
+    border-radius: 24px;
     line-height: normal;
 }
 .mainpage_review_text{
@@ -416,5 +409,65 @@ footer{
     width: 48px;
     height: 48px;
     margin-right: 16px;
+    border-radius: 100%;
+    outline: 2px solid rgb(124, 124, 124);
+}
+
+
+.mainpage_content3{
+    display: flex;
+    place-items: center center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    background-color: #c97f4a;
+}
+.mainpage_content3 h2{
+    color: #ffffff;
+    font-family: "Ubuntu Mono";
+    font-size: 53px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: normal;
+}
+.mainpage_content3 h3{
+    color: #ffffff;
+    font-family: "Ubuntu Mono";
+    font-size: 32px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: normal;
+}
+.mainpage_content3 h3 img{
+    width: 32px;
+    height: 32px;
+    vertical-align: bottom;
+}
+.mainpage_content3 p{
+    color: #ffffff;
+    font-family: "Ubuntu Mono";
+    font-size: 28px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: normal;
+}
+.mainpage_content3 iframe{
+    border:0;
+}
+.mainpage_content3_content{
+    width: 100%;
+    height: 507px;
+    /* padding: 0 0 48px; */
+    display: flex;
+    justify-content: space-evenly;
+    place-items: start center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    color: #ffffff;
+}
+.mainpage_contacts{
+    display: flex;
+    flex-direction: column;
 }
 /* ____________BODY___________ */

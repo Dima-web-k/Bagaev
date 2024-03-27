@@ -3,11 +3,20 @@ import style from './main_page.module.css'
 import { CustomBorder1 , CustomBorder1_RT, CustomBorder2 } from '../../custom_borders'
 import { Team } from './team_tabs'
 import { Content1 } from './content1'
-import { Link } from "react-router-dom";
+import { Content2 } from './content2'
+import { Link } from "react-router-dom"
+import { Map } from './map'
 
+import logo_img from "../../assets/logo.png"
+import arrow_down_img from "../../assets/arrow_down.png"
+import content_icon1_img from "../../assets/content_icon1.png"
+import content_icon2_img from "../../assets/content_icon2.png"
+import content_icon3_img from "../../assets/content_icon3.png"
+import contact_icon_img from "../../assets/contact_icon.png"
+import location_icon_img from "../../assets/location_icon.png"
 
 export default function MainPage() {
-  let title= document.getElementById('head_title')
+  let title= document.getElementById('head_title')!
   title.textContent='"Новое мышление" - Школа общественных наук'
   
   return (
@@ -18,7 +27,7 @@ export default function MainPage() {
         <div className={style.mainpage_head_div}>
 
           <div className={style.mainpage_logo_div}>
-            <img src="/src/assets/logo.png" className={style.mainpage_logo}/>
+            <img src={logo_img} className={style.mainpage_logo}/>
             <p> 
               <span className={style.mainpage_main_title}> НОВОЕ МЫШЛЕНИЕ </span> <br/>
               Школа общественных наук
@@ -48,41 +57,41 @@ export default function MainPage() {
 
 
         <a href='#body_div'>
-          <img src="/src/assets/arrow_down.png" className={style.mainpage_arrow}/>
+          <img src={arrow_down_img} className={style.mainpage_arrow}/>
         </a>
         
       </header>
       {/* </div> */}
 
-      <div className={style.mainpage_body} id='body_div'>
+      <main className={style.mainpage_body} id='body_div'>
 
         <Content1/>
 
         <CustomBorder1/>
         <div className={style.mainpage_content2}>
           <h2> 
-            Наши принципы
+            Предметы
           </h2>
           <div className={style.mainpage_principle}>
 
             <div>
-              <img src="src/assets/content_icon1.png"/>
+              <img src={content_icon1_img}/>
               <p> 
-                Интересно
+                История
               </p>
             </div>
             <hr/>
             <div>
-              <img src="src/assets/content_icon2.png"/>
+              <img src={content_icon2_img}/>
               <p> 
-                Понятно
+                Общество
               </p>
             </div>
             <hr/>
             <div>
-              <img src="src/assets/content_icon3.png"/>
+              <img src={content_icon3_img}/>
               <p> 
-                С душой
+                Право
               </p>
             </div>
 
@@ -94,52 +103,26 @@ export default function MainPage() {
 
         <CustomBorder2/>
         <div className={style.mainpage_content3}>
-          <h2>Отзывы выпускников</h2> 
+          <h2>Наше местоположение</h2> 
           <div className={style.mainpage_content3_content}>
-            <div className={style.mainpage_reviews}>
-              <div className={style.mainpage_review}>
-              <section>
-                <img src="src/assets/avatar_default.png"/>
-                <p className={style.mainpage_name}>
-                  <span>Иванов Иван</span> <br/>
-                  призер ВСОШ по праву
-                </p>
-              </section>
-              <p className={style.mainpage_review_text}>
-                  “Пришёл в школу для того чтобы поднять знание обществознания, а потом искра, буря, безумие”
+            <section>
+              <h3><img src={location_icon_img}/>Адрес:</h3>
+              <p>г.Омск ул.Красный путь д.101 к.2</p>
+              <h3><img src={contact_icon_img}/>Контакты:</h3>
+              <p className={style.mainpage_contacts}>
+                <span>+7(000)-000-00-00</span> 
+                <span>+7(000)-000-00-00</span> 
+                <p></p>
+                <span>random.86@gmail.com</span>  
               </p>
-              </div>
-              <div className={style.mainpage_review}>
-                <section>
-                  <img src="src/assets/avatar_default.png"/>
-                  <p className={style.mainpage_name}>
-                    <span>Иванов Иван</span> <br/>
-                    призер ВСОШ по праву
-                  </p>
-                </section>
-                <p className={style.mainpage_review_text}>
-                    “Пришёл в школу для того чтобы поднять знание обществознания, а потом искра, буря, безумие”
-                </p>
-              </div>
-              <div className={style.mainpage_review}>
-                <section>
-                  <img src="src/assets/avatar_default.png"/>
-                  <p className={style.mainpage_name}>
-                    <span>Иванов Иван</span> <br/>
-                    призер ВСОШ по праву
-                  </p>
-                </section>
-                <p className={style.mainpage_review_text}>
-                    “Пришёл в школу для того чтобы поднять знание обществознания, а потом искра, буря, безумие”
-                </p>
-              </div>
-            </div>
-            <img className={style.mainpage_cup} src="src/assets/cup.png"/>
+            </section>
+            <section>
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A784700f40e750931aa89ab79437b51bc5e4ddcbaa706c44c61273c5f226b663a&amp;source=constructor" width="650" height="396"></iframe>
+            </section>
           </div>
-          {/* <CustomBorder2_RT/> */}
         </div>
 
-      </div>
+      </main>
 
       <footer>КОНТАТКТНАЯ И ЮР. ИНФРОМАЦИЯ</footer>
     </>

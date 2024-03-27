@@ -80,8 +80,6 @@ body {
   place-items: stretch flex-start;
   flex-direction: column;
   flex-wrap: nowrap;
-
-  background-color: #0077ff;
 }
 
 
